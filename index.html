@@ -19,8 +19,8 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Christian Bongard</a>
         <button
@@ -35,29 +35,29 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#welcome">
+              <a class="nav-link active" aria-current="page" href="#banner_anchor">
                 Welcome
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#about_me">About me</a>
+              <a class="nav-link active" href="#about_me_anchor">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#career">My career</a>
+              <a class="nav-link active" href="#career_anchor">My career</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#education">My education</a>
+              <a class="nav-link active" href="#education_anchor">My education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#passions">My interests</a>
+              <a class="nav-link active" href="#passions_anchor">My interests</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#projects">My projects</a>
+              <a class="nav-link active" href="#projects_anchor">My projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#contact">Contact me</a>
+              <a class="nav-link active" href="#contact_anchor">Contact me</a>
             </li>
           </ul>
         </div>
@@ -65,19 +65,22 @@
     </nav>
 
     <div id="top"></div>
-    <div class="min-vh-100 d-flex align-items-center" id="banner">
+    <div class="min-vh-100 d-flex align-items-center position-relative" id="banner">
+      <div id="banner_anchor" class="anchor"></div>
       <div class="banner-content">
         <h1 id="welcome">Hello</h1>
         <h2>Christian Bongard: Full-stack developper in the making</h2>
       </div>
     </div>
 
-    <div class="min-vh-100" id="about_me">
+    <div class="min-vh-100 position-relative" id="about_me">
+      <div id="about_me_anchor" class="anchor"></div>
       <h3>About Me</h3>
       <p>Hello</p>
     </div>
 
-    <div class="min-vh-100" id="career">
+    <div class="min-vh-100 position-relative" id="career">
+      <div id="career_anchor" class="anchor"></div>
       <h3>My Career</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod incidunt
@@ -86,7 +89,8 @@
         assumenda. Quasi.
       </p>
     </div>
-    <div class="min-vh-100" id="education">
+    <div class="min-vh-100 position-relative" id="education">
+      <div id="education_anchor" class="anchor"></div>
       <h3>My Education</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam modi
@@ -97,7 +101,8 @@
         ea.
       </p>
     </div>
-    <div class="min-vh-100" id="passions">
+    <div class="min-vh-100 position-relative" id="passions">
+      <div id="passions_anchor" class="anchor"></div>
       <h3>My Interests</h3>
       <div class="passions_grid">
         <div class="passions_grid_items">
@@ -122,7 +127,8 @@
         </div>
       </div>
     </div>
-    <div class="min-vh-100" id="projects">
+    <div class="min-vh-100 position-relative" id="projects">
+      <div id="projects_anchor" class="anchor"></div>
       <div class="container">
         <h3 class="text-light">My projects</h3>
         <!-- Accordion -->
@@ -511,7 +517,8 @@
         </div>
       </div>
     </div>
-    <div class="min-vh-100" id="contact">
+    <div class="min-vh-100 position-relative" id="contact">
+      <div id="contact_anchor" class="anchor"></div>
       <h3>Contact me</h3>
     </div>
 
