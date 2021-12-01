@@ -2,34 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Profile</title>
+    <title>Christian Bongard</title>
     <meta name="description" content="Welcome all to my profile bio" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header id="header"></header>
-    <div class="container" id="top">
-      <div class="card">
-        <h1 id="welcome">Welcome to Christian's Profile</h1>
-        <h2>Christian Bongard: Full-stack developper in the making</h2>
-        <img
-          src="images/profile_picture.jpg"
-          alt="My profile picture"
-          id="avatar"
-        />
-        <a href="#" target="_blank" class="btn_large">Discover about me</a>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Christian Bongard</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#welcome"
+                >Welcome</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">My career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">My education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">My interests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">My projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact me</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="card">
+    </nav>
+    <div id="top"></div>
+      <div class="min-vh-100 d-flex align-items-center" id="banner">
+        <div class="banner-content">
+          <h1 id="welcome">Hello</h1>
+          <h2>Christian Bongard: Full-stack developper in the making</h2>
+        </div>
+      </div>
+      <a href="#top" class="btn_small"
+        >Go to top <i class="fas fa-arrow-up"></i
+      ></a>
+      <div class="min-vh-100">
         <h3 id="about_me">About Me</h3>
-        <p>
-          Hello
-        </p>
+        <p>Hello</p>
       </div>
-      <div class="card">
+
+      <div class="min-vh-100">
         <h3 id="career">My Career</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod incidunt
@@ -38,7 +87,7 @@
           accusantium assumenda. Quasi.
         </p>
       </div>
-      <div class="card">
+      <div class="min-vh-100">
         <h3 id="education">My Education</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam modi
@@ -49,8 +98,8 @@
           vitae quod ea.
         </p>
       </div>
-      <div class="card">
-        <h3 id="passions">My Passions</h3>
+      <div class="min-vh-100">
+        <h3 id="passions">My Interests</h3>
         <div class="passions_grid">
           <div class="passions_grid_items">
             <img src="images/passions/diving.jfif" alt="diving and swimming" />
@@ -74,44 +123,38 @@
           </div>
         </div>
       </div>
-      <div class="card">
+      <div class="min-vh-100">
         <h3>My projects</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam quod
-          aliquid omnis doloremque magnam deserunt, est quo eveniet maiores
-          officia!
-        </p>
       </div>
-      <a href="#top" class="btn_small"
-        >Go to top <i class="fas fa-arrow-up"></i
-      ></a>
-      <footer>
-        <ul>
-          <li>
-            <a href="#" target="_blank"
-              ><i class="fab fa-facebook-square"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-github-square"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-slack"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-twitch"></i></a>
-          </li>
-          <li>
-            <a href="#" class="footer_link" id="my_profile_link">My profile</a>
-          </li>
-          <li><a href="#" class="footer_link">Le Wagon</a></li>
-          <li><a href="#" class="footer_link">Lorem</a></li>
-        </ul>
-      </footer>
-    </div>
+      <div class="min-vh-100">
+        <h3>Contact me</h3>
+      </div>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><i class="fab fa-github-square"></i></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><i class="fab fa-slack"></i></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><i class="fab fa-twitch"></i></a>
+        </li>
+        <li>
+          <a href="#" class="footer_link" id="my_profile_link">My profile</a>
+        </li>
+        <li><a href="#" class="footer_link">Le Wagon</a></li>
+        <li><a href="#" class="footer_link">Lorem</a></li>
+      </ul>
+    </footer>
     <script src="application.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
