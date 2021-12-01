@@ -2,6 +2,7 @@
 @import "footer.css";
 @import "card.css";
 @import "banner.css";
+@import "background.css";
 
 
 :root {
@@ -12,14 +13,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
-  background-color: hsl(41, 100%, 98%);
-}
-
 footer {
   padding: 5px 10px;
-  background-color: hsl(41, 10%, 67%);
 }
 h1 {
   font-size: 2.5em;
@@ -34,11 +29,7 @@ h3 {
   font-family: "Roboto", sans-serif;
 }
 
-h1,
-h2,
-h3 {
-  color: hsl(0, 0%, 35%);
-}
+
 li {
   list-style: none;
   display: inline;
@@ -50,9 +41,6 @@ p {
 }
 .container {
   margin: 0 auto;
-}
-#my_profile_link {
-  margin-left: 10%;
 }
 .footer_link {
   font-size: 1.5em;
@@ -70,13 +58,6 @@ p {
 }
 .footer_link {
   text-decoration: none;
-}
-#avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 5px 20px hsla(0, 0%, 0%, 0.3);
 }
 .btn_large {
   background-color: blue;

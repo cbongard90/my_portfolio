@@ -1,0 +1,43 @@
+:root{
+  --background-color1: hsl(179, 99%, 67%);
+  --background-color2: hsl(190, 100%, 47%);
+  --background-color3: hsl(201, 99%, 44%);
+  --background-color4: hsl(213, 99%, 38%);
+  --background-color5: hsl(213, 100%, 37%);
+  --background-color6: hsl(223, 100%, 31%);
+  --background-color7: hsl(233, 100%, 25%);
+  --background-color8: hsl(232, 92%, 5%);
+  --background-color9: hsl(0, 0%, 0%);
+}
+
+#banner{
+  background: linear-gradient(180deg,var(--background-color1), var(--background-color2));
+  /* background-color: var(--background-color1); */
+}
+#about_me{
+  background: linear-gradient(180deg,var(--background-color2), var(--background-color3));
+  /* background-color: var(--background-color1); */
+}
+#career{
+  background: linear-gradient(180deg,var(--background-color3), var(--background-color4));
+  /* background-color: var(--background-color1); */
+}
+#education{
+  background: linear-gradient(180deg,var(--background-color4), var(--background-color5));
+  /* background-color: var(--background-color1); */
+}
+#passions{
+  background: linear-gradient(180deg,var(--background-color5), var(--background-color6));
+  /* background-color: var(--background-color1); */
+}
+#projects{
+  background: linear-gradient(180deg,var(--background-color6), var(--background-color7));
+  /* background-color: var(--background-color1); */
+}
+#contact{
+  background: linear-gradient(180deg,var(--background-color7), var(--background-color8));
+  /* background-color: var(--background-color1); */
+}
+footer{
+  background: linear-gradient(180deg,var(--background-color8), var(--background-color9));
+}
